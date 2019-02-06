@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AJEFD", "AJEFD\AJEFD.csproj", "{F8F61ED7-C6DF-4220-A163-146864C0B681}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7361093-8465-48D7-9CEF-6F1A3655298C}"
+	ProjectSection(SolutionItems) = preProject
+		ReadConfig.cs = ReadConfig.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{E350A2BB-5B37-44A0-8266-5C5FA0B3D65A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8F61ED7-C6DF-4220-A163-146864C0B681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F61ED7-C6DF-4220-A163-146864C0B681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F61ED7-C6DF-4220-A163-146864C0B681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F61ED7-C6DF-4220-A163-146864C0B681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7525C3B-1894-4BC7-9E60-2D3F22AA69F6}
+	EndGlobalSection
+EndGlobal

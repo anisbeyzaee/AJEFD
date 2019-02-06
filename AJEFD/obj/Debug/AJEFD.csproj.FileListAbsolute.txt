@@ -1,0 +1,7 @@
+C:\Users\Anis\source\repos\AJEFD\AJEFD\bin\Debug\AJEFD.exe.config
+C:\Users\Anis\source\repos\AJEFD\AJEFD\bin\Debug\AJEFD.exe
+C:\Users\Anis\source\repos\AJEFD\AJEFD\bin\Debug\AJEFD.pdb
+C:\Users\Anis\source\repos\AJEFD\AJEFD\obj\Debug\AJEFD.csproj.CoreCompileInputs.cache
+C:\Users\Anis\source\repos\AJEFD\AJEFD\obj\Debug\AJEFD.exe
+C:\Users\Anis\source\repos\AJEFD\AJEFD\obj\Debug\AJEFD.pdb
+C:\Users\Anis\source\repos\AJEFD\AJEFD\obj\Debug\AJEFD.csprojResolveAssemblyReference.cache

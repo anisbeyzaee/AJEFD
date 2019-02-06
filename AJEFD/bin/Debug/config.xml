@@ -1,0 +1,18 @@
+<config>
+
+<dataservice value="EarthNow" status="False">
+	<name> E1.jpg </name>
+	<disk>
+		"C:\null EarthNow"
+	</disk>
+</dataservice>
+
+
+<dataservice value="Local" status="True">
+	<name> L1.jpg </name>
+	<disk>
+		"C:\null Local"
+	</disk>
+</dataservice>
+
+</config>
