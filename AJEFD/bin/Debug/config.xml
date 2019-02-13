@@ -1,18 +1,13 @@
-<config>
-
-<dataservice value="EarthNow" status="False">
-	<name> E1.jpg </name>
-	<disk>
-		"C:\null EarthNow"
-	</disk>
-</dataservice>
-
-
-<dataservice value="Local" status="True">
-	<name> L1.jpg </name>
-	<disk>
-		"C:\null Local"
-	</disk>
-</dataservice>
-
-</config>
+<?xml version="1.0"?>
+<ArrayOfDataService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataService>
+    <Status>Active</Status>
+    <Type>type will be  'Local'   for now </Type>
+    <SourceFolder>C:\Users\anisb\source\repos\AJEFD\LocalTestImages</SourceFolder>
+  </DataService>
+  <DataService>
+    <Status>Active</Status>
+    <Type>type will be 'EarthNow'</Type>
+    <SourceFolder>C:\Users\anisb\source\repos\AJEFD\EartnowTestImages</SourceFolder>
+  </DataService>
+</ArrayOfDataService>

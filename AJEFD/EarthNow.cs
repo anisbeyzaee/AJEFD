@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace AJEFD
 {
-    public class EarthNow : IPathCreatorInterface
+    public class EarthNow : IPathInterface
     {
+        DataService myDataService;
         String path;
         String name;
-        public EarthNow(String name)
+        public EarthNow(DataService ds)
         {
-
-            this.name = name;
+           myDataService = ds;
+            
 
         }
         public String getPath()
         {
-            return this.path;
+            Console.Write(" Path of Type EarthNOw Created,   the path is +> {0} \n", myDataService.SourceFolder);
+            return myDataService.SourceFolder;
         }
         public void createPath()
         {

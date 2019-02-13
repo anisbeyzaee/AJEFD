@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
+
 namespace AJEFD
 {
     class Program
@@ -12,9 +13,12 @@ namespace AJEFD
         static void Main(string[] args)
         {
             ReadConfig rc = new ReadConfig();
-            IPathCreatorInterface obj = ObjectFactoryPath.Create(rc.getTheType(), rc.getName());
+            
+            IPathInterface obj = ObjectFactoryPath.Create(rc.Read());
             String myPath = obj.getPath();
-            ExternalCom ec = new ExternalCom(myPath);
+            Console.Write("myPath in main is ....." + myPath);
+            ExternalCom ec = new ExternalCom("myPath");
+            Console.ReadLine();
 
         }
     }

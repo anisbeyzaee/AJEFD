@@ -10,30 +10,46 @@ namespace AJEFD
     class ObjectFactoryPath
     {
 
-        public static IPathCreatorInterface Create(String type, String name)
+        public static IPathInterface Create(List<DataService> dataServices)
         {
+            // Ask Alfred about this: Efficiency
+            DataService myDataService = new DataService();
+            String sourceFolder = null;
+            Boolean localImage = false;
+            Boolean earthNow = false;
+            Console.WriteLine("HERE in ObjectFactoryPath");
+                   
 
+            
 
-            if (type == "EarthNow")
+            foreach( DataService ds in dataServices)
             {
-                return new EarthNow(name);
+                if (ds.Status.ToLower().Equals("enable") && ds.Type.ToLower().Equals("local"))
+                {
+                    localImage = true;
+                    myDataService = ds;
+                }
+                //return new LocalPath(ds.SourceFolder);
+                if (ds.Status.ToLower().Equals("enable") && ds.Type.ToLower().Equals("earthnow"))
+                {
+                    earthNow = true;
+                    myDataService = ds;
+
+                }
             }
+
+            if (localImage)
+                return new LocalPath(myDataService);
+
             else
-            {
-                return new LocalPath(name);
-            } 
-
-            //var check = ConfigurationManager.AppSettings[type];
-            //switch (check)
-            //{
-
-            //    case "EarthNow":
-            //        return new Local(type);
-            //        break;
-            //    case "Local":
-            //        return new Local(type);
-            //        break;
-            //}
+                return new EarthNow(myDataService);
+            
+            //TO DO
+            // add error handling of any case:
+            //
+            // there is typo
+            // none is selected
+            // etc..
         }
     }
 }

@@ -4,39 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.IO;  //writing to a file
+using System.Runtime.Serialization.Formatters.Binary;  //toBinary
+using System.Xml.Serialization;  //to serialize xml
+using System.Runtime.Serialization;
 
 namespace AJEFD
 {
-    class ReadConfig
+    class  ReadConfig
     {
-        String type;
-        String path;
-        String name;
-        public ReadConfig() { 
-            XmlDocument doc = new XmlDocument();
-            doc.Load("config.xml");
 
-
-            foreach(XmlNode node in doc.DocumentElement)
+         
+         public List<DataService> Read()
+         {
+            
+            
+            List<DataService> dataServiceList = new List<DataService>();
+            XmlSerializer serializer = new XmlSerializer(typeof(List<DataService>));
+            using (Stream fileStream = File.OpenRead(@"C:\Users\anisb\source\repos\AJEFD\AJEFD\bin\Debug\Config.xml"))
             {
-                if (node.Attributes[1].InnerText == "True")
-                {
-                    Console.Write(" Active DataService :  {0}  Path to Images is :  {1} \n  ", node.Attributes[1].InnerText, node.InnerText);
-                    this.type = node.Attributes[1].InnerText;
-                }
+                dataServiceList = (List<DataService>)serializer.Deserialize(fileStream);
             }
-            Console.ReadLine();
-        }
+           
+            foreach (DataService ds in dataServiceList)
+            {
+               /// Console.WriteLine(ds);
+            }
+            return dataServiceList;
+         }
 
-        public String getTheType()
+
+
+        //  this method can reconstruct the XML configuration file
+        //  in case of loosing the file or if the format is corrupted somehow, Admin can run this method
+        //  A clean Config file will be written with the right format 
+        public void configRebuild()
         {
-            return type;
-        }
-        public String getName()
-        {
-            return name;
+            List<DataService> dataServiceList = new List<DataService>
+            {
+                new DataService("Active", "type will be  'Local'   for now ", @"C:\Users\anisb\source\repos\AJEFD\LocalTestImages"),
+                new DataService("Active", "type will be 'EarthNow'", @"C:\Users\anisb\source\repos\AJEFD\EartnowTestImages"),
+
+            };
+
+            using (Stream fs = new FileStream(@"C:\Users\anisb\source\repos\AJEFD\AJEFD\bin\Debug\Config.xml", FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<DataService>));
+                serializer.Serialize(fs, dataServiceList);
+            }
         }
     }
 
-    
 }
+    
+   

@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AJEFD", "AJEFD\AJEFD.csproj", "{F8F61ED7-C6DF-4220-A163-146864C0B681}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7361093-8465-48D7-9CEF-6F1A3655298C}"
-	ProjectSection(SolutionItems) = preProject
-		ReadConfig.cs = ReadConfig.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{E350A2BB-5B37-44A0-8266-5C5FA0B3D65A}"
 EndProject

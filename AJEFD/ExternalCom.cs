@@ -18,12 +18,12 @@ namespace AJEFD
         private void connect(String path)
         {
             ProcessStartInfo s = new ProcessStartInfo();
-            s.FileName = @"C:\Program Files\Java\jdk1.8.0_131\bin\java.exe";
+            s.FileName = @"C:\Program Files\Java\jdk-11.0.2\bin\java.exe";
 
             s.WorkingDirectory = @"C:\Temp";
 
 
-            s.Arguments = @"JoeClassifierJava " + path; // C:\Temp\ForestImage.png";
+            s.Arguments = @"H " + path; // C:\Temp\ForestImage.png";
 
             s.UseShellExecute = false;
 
@@ -32,18 +32,11 @@ namespace AJEFD
             s.RedirectStandardError = true;
 
             s.CreateNoWindow = true;
-
-
-
             Process process = new Process();
 
             process.StartInfo = s;
 
             process.Start();
-
-
-
-
 
             while (!process.StandardOutput.EndOfStream)
 
@@ -53,7 +46,7 @@ namespace AJEFD
 
 
 
-                System.Windows.MessageBox.Show("isFire: " + isFire);
+                System.Windows.MessageBox.Show(path + isFire);
 
                 break;
 

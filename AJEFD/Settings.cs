@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace AJEFD
 {
-    public interface IPathCreatorInterface
+    class Settings
     {
-        void createPath();
-        string getPath();
     }
-
 }
