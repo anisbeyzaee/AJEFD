@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
-using System.Windows.Forms;
 namespace AJEFD
 {
     class ExternalCom
@@ -21,10 +16,8 @@ namespace AJEFD
             s.FileName = @"C:\Program Files\Java\jdk-11.0.2\bin\java.exe";
 
             s.WorkingDirectory = @"C:\Temp";
-
-
-            s.Arguments = @"H " + path; // C:\Temp\ForestImage.png";
-
+            //s.Arguments = path;
+            s.Arguments = @"H " + path;
             s.UseShellExecute = false;
 
             s.RedirectStandardOutput = true;

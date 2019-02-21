@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AJEFD
+namespace AppFramework
 {
-    public interface IPathInterface
+    interface IPath
     {
-        
         string getPath();
     }
-
 }

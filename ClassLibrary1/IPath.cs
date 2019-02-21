@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AJEFD
+namespace ClassLibrary1
 {
-    class Settings
+    public interface IPath
     {
+        String getPath();
     }
 }

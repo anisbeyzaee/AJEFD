@@ -1,15 +1,16 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AJEFD")]
+[assembly: AssemblyTitle("ClassLibrary1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("AJEFD")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2019")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ClassLibrary1")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f8f61ed7-c6df-4220-a163-146864c0b681")]
+[assembly: Guid("fbc6ddb1-d19c-48c4-92cd-1c806bbd7d67")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,13 +1,8 @@
 <?xml version="1.0"?>
-<ArrayOfDataService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DataService>
-    <Status>Active</Status>
-    <Type>type will be  'Local'   for now </Type>
-    <SourceFolder>C:\Users\anisb\source\repos\AJEFD\LocalTestImages</SourceFolder>
-  </DataService>
-  <DataService>
-    <Status>Active</Status>
-    <Type>type will be 'EarthNow'</Type>
-    <SourceFolder>C:\Users\anisb\source\repos\AJEFD\EartnowTestImages</SourceFolder>
-  </DataService>
-</ArrayOfDataService>
+<DataService>
+	<Type>local disk</Type>
+	<dllFileName>LocalResources.dll</dllFileName>
+	<NameSpace> LocalResources</NameSpace>
+	<ClassName>LocalResources.LocalSource</ClassName>
+	<ClassConfigurationFile>conf.xml</ClassConfigurationFile>
+</DataService>

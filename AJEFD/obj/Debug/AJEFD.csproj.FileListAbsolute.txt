@@ -12,3 +12,6 @@ C:\Users\anisb\Source\Repos\AJEFD\AJEFD\bin\Debug\AJEFD.pdb
 C:\Users\anisb\Source\Repos\AJEFD\AJEFD\obj\Debug\AJEFD.exe
 C:\Users\anisb\Source\Repos\AJEFD\AJEFD\obj\Debug\AJEFD.pdb
 C:\Users\anisb\Source\Repos\AJEFD\AJEFD\obj\Debug\AJEFD.csprojAssemblyReference.cache
+C:\Users\anisb\Source\Repos\AJEFD\AJEFD\bin\Debug\ClassLibrary1.dll
+C:\Users\anisb\Source\Repos\AJEFD\AJEFD\bin\Debug\ClassLibrary1.pdb
+C:\Users\anisb\Source\Repos\AJEFD\AJEFD\obj\Debug\AJEFD.csproj.CopyComplete

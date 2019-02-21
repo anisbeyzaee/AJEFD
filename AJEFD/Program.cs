@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using ClassLibrary1;
+using System;
+
 
 
 namespace AJEFD
@@ -12,13 +9,17 @@ namespace AJEFD
     {
         static void Main(string[] args)
         {
-            ReadConfig rc = new ReadConfig();
+
             
-            IPathInterface obj = ObjectFactoryPath.Create(rc.Read());
+            ReadConfig rc = new ReadConfig();
+            rc.ReadObjType();
+            String[] list = rc.ReadObjType();
+            IPath obj = ObjectFactoryPath.Create(list);
+            //IPath obj = Class1.Create(list);
             String myPath = obj.getPath();
-            Console.Write("myPath in main is ....." + myPath);
-            ExternalCom ec = new ExternalCom("myPath");
-            Console.ReadLine();
+            ////Console.WriteLine("myPath in main is ....." + myPath);
+            
+            //Console.ReadLine();
 
         }
     }
