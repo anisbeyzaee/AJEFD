@@ -15,9 +15,9 @@ namespace AJEFD
             ProcessStartInfo s = new ProcessStartInfo();
             s.FileName = @"C:\Program Files\Java\jdk-11.0.2\bin\java.exe";
 
-            s.WorkingDirectory = @"C:\Temp";
+            s.WorkingDirectory = @"C:\Temp\JClassifier";
             //s.Arguments = path;
-            s.Arguments = @"H " + path;
+            s.Arguments = @"ReadImage " + path;
             s.UseShellExecute = false;
 
             s.RedirectStandardOutput = true;
@@ -37,9 +37,7 @@ namespace AJEFD
 
                 string isFire = process.StandardOutput.ReadLine();
 
-
-
-                System.Windows.MessageBox.Show(path + isFire);
+                System.Windows.MessageBox.Show("Joe says :  " + isFire);
 
                 break;
 
